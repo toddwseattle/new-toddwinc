@@ -1,0 +1,506 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{daa91929-f6d7-43fb-b45e-d8306a702153}</ProjectGuid>
+    <ProjectHome />
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>karma.conf.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="bower.json" />
+    <Content Include="app\header.html" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Compile Include="karma.conf.js" />
+    <Content Include="app\index-async.html" />
+    <Content Include="app\index.html" />
+    <Content Include="app\app.css" />
+    <Compile Include="app\app.js" />
+    <Compile Include="e2e-tests\protractor.conf.js" />
+    <Compile Include="e2e-tests\scenarios.js" />
+    <Content Include="app\view1\view1.html" />
+    <Compile Include="app\view1\view1.js" />
+    <Compile Include="app\view1\view1_test.js" />
+    <Content Include="app\view2\view2.html" />
+    <Compile Include="app\view2\view2.js" />
+    <Compile Include="app\view2\view2_test.js" />
+    <Content Include="app\bower_components\angular\angular-csp.css" />
+    <Content Include="app\bower_components\angular\.bower.json" />
+    <Content Include="app\bower_components\angular\bower.json" />
+    <Content Include="app\bower_components\angular\package.json" />
+    <Content Include="app\bower_components\angular\README.md" />
+    <Compile Include="app\bower_components\angular\angular.js" />
+    <Compile Include="app\bower_components\angular\angular.min.js" />
+    <Content Include="app\bower_components\angular-animate\.bower.json" />
+    <Content Include="app\bower_components\angular-animate\bower.json" />
+    <Content Include="app\bower_components\angular-animate\package.json" />
+    <Content Include="app\bower_components\angular-animate\README.md" />
+    <Compile Include="app\bower_components\angular-animate\angular-animate.js" />
+    <Compile Include="app\bower_components\angular-animate\angular-animate.min.js" />
+    <Content Include="app\bower_components\angular-aria\.bower.json" />
+    <Content Include="app\bower_components\angular-aria\bower.json" />
+    <Content Include="app\bower_components\angular-aria\package.json" />
+    <Content Include="app\bower_components\angular-aria\README.md" />
+    <Compile Include="app\bower_components\angular-aria\angular-aria.js" />
+    <Compile Include="app\bower_components\angular-aria\angular-aria.min.js" />
+    <Content Include="app\bower_components\angular-loader\.bower.json" />
+    <Content Include="app\bower_components\angular-loader\bower.json" />
+    <Content Include="app\bower_components\angular-loader\package.json" />
+    <Content Include="app\bower_components\angular-loader\README.md" />
+    <Compile Include="app\bower_components\angular-loader\angular-loader.js" />
+    <Compile Include="app\bower_components\angular-loader\angular-loader.min.js" />
+    <Content Include="app\bower_components\angular-material\angular-material.css" />
+    <Content Include="app\bower_components\angular-material\angular-material.min.css" />
+    <Content Include="app\bower_components\angular-material\.bower.json" />
+    <Content Include="app\bower_components\angular-material\bower.json" />
+    <Content Include="app\bower_components\angular-material\README.md" />
+    <Compile Include="app\bower_components\angular-material\angular-material.js" />
+    <Compile Include="app\bower_components\angular-material\angular-material.min.js" />
+    <Content Include="app\bower_components\angular-mocks\.bower.json" />
+    <Content Include="app\bower_components\angular-mocks\bower.json" />
+    <Content Include="app\bower_components\angular-mocks\package.json" />
+    <Content Include="app\bower_components\angular-mocks\README.md" />
+    <Compile Include="app\bower_components\angular-mocks\angular-mocks.js" />
+    <Content Include="app\bower_components\angular-route\.bower.json" />
+    <Content Include="app\bower_components\angular-route\bower.json" />
+    <Content Include="app\bower_components\angular-route\package.json" />
+    <Content Include="app\bower_components\angular-route\README.md" />
+    <Compile Include="app\bower_components\angular-route\angular-route.js" />
+    <Compile Include="app\bower_components\angular-route\angular-route.min.js" />
+    <Content Include="app\bower_components\hammerjs\.bower.json" />
+    <Content Include="app\bower_components\hammerjs\bower.json" />
+    <Content Include="app\bower_components\hammerjs\component.json" />
+    <Content Include="app\bower_components\hammerjs\package.json" />
+    <Content Include="app\bower_components\hammerjs\CHANGELOG.md" />
+    <Content Include="app\bower_components\hammerjs\CONTRIBUTING.md" />
+    <Content Include="app\bower_components\hammerjs\LICENSE.md" />
+    <Content Include="app\bower_components\hammerjs\README.md" />
+    <Compile Include="app\bower_components\hammerjs\hammer.js" />
+    <Compile Include="app\bower_components\hammerjs\hammer.min.js" />
+    <Content Include="app\bower_components\html5-boilerplate\humans.txt" />
+    <Content Include="app\bower_components\html5-boilerplate\robots.txt" />
+    <Content Include="app\bower_components\html5-boilerplate\404.html" />
+    <Content Include="app\bower_components\html5-boilerplate\index.html" />
+    <Content Include="app\bower_components\html5-boilerplate\apple-touch-icon-precomposed.png" />
+    <Content Include="app\bower_components\html5-boilerplate\favicon.ico" />
+    <Content Include="app\bower_components\html5-boilerplate\.bower.json" />
+    <Content Include="app\bower_components\html5-boilerplate\CHANGELOG.md" />
+    <Content Include="app\bower_components\html5-boilerplate\CONTRIBUTING.md" />
+    <Content Include="app\bower_components\html5-boilerplate\LICENSE.md" />
+    <Content Include="app\bower_components\html5-boilerplate\README.md" />
+    <Content Include="app\bower_components\html5-boilerplate\crossdomain.xml" />
+    <Content Include="app\bower_components\angular-material\themes\amber-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\blue-grey-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\blue-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\brown-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\cyan-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\deep-orange-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\deep-purple-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\green-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\grey-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\indigo-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\light-blue-dark-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\light-green-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\lime-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\orange-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\pink-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\purple-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\red-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\teal-theme.css" />
+    <Content Include="app\bower_components\angular-material\themes\yellow-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\backdrop\backdrop-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\backdrop\backdrop.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\backdrop\backdrop.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\bottomSheet\bottomSheet.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\button\button-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\button\button.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\button\button.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\card\card-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\card\card.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\card\card.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\checkbox\checkbox-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\checkbox\checkbox.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\checkbox\checkbox.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\content\content-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\content\content.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\content\content.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\core\core.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\core\core.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\dialog\dialog-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\dialog\dialog.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\dialog\dialog.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\divider\divider-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\divider\divider.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\divider\divider.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\icon\icon.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\icon\icon.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\list\list.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\list\list.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\menu\menu.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\menu\menu.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\progressCircular\progressCircular-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\progressCircular\progressCircular.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\progressCircular\progressCircular.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\progressLinear\progressLinear-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\progressLinear\progressLinear.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\progressLinear\progressLinear.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\radioButton\radioButton-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\radioButton\radioButton.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\radioButton\radioButton.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\sidenav\sidenav.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\sidenav\sidenav.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\slider\slider-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\slider\slider.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\slider\slider.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\sticky\sticky.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\sticky\sticky.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\subheader\subheader-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\subheader\subheader.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\subheader\subheader.js" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\swipe\swipe.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\switch\switch-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\switch\switch.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\switch\switch.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\tabs\tabs-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\tabs\tabs.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\tabs\tabs.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\textField\textField-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\textField\textField.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\textField\textField.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\toast\toast-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\toast\toast.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\toast\toast.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\toolbar\toolbar-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\toolbar\toolbar.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\toolbar\toolbar.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\tooltip\tooltip-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\closure\tooltip\tooltip.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\tooltip\tooltip.js" />
+    <Content Include="app\bower_components\angular-material\modules\closure\whiteframe\whiteframe.css" />
+    <Compile Include="app\bower_components\angular-material\modules\closure\whiteframe\whiteframe.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\backdrop\backdrop-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\backdrop\backdrop.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\backdrop\backdrop.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\backdrop\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\backdrop\backdrop.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\backdrop\backdrop.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\bottomSheet\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\bottomSheet\bottomSheet.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\button\button-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\button\button-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\button\button.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\button\button.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\button\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\button\button.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\button\button.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\card\card-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\card\card-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\card\card.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\card\card.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\card\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\card\card.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\card\card.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\checkbox\checkbox-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\checkbox\checkbox.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\checkbox\checkbox.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\checkbox\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\checkbox\checkbox.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\checkbox\checkbox.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\content\content-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\content\content-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\content\content.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\content\content.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\content\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\content\content.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\content\content.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\core\core.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\core\core.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\core\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\core\core.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\core\core.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\dialog\dialog-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\dialog\dialog-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\dialog\dialog.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\dialog\dialog.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\dialog\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\dialog\dialog.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\dialog\dialog.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\divider\divider-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\divider\divider-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\divider\divider.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\divider\divider.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\divider\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\divider\divider.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\divider\divider.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\icon\icon.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\icon\icon.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\icon\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\icon\icon.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\icon\icon.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\list\list.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\list\list.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\list\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\list\list.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\list\list.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\menu\menu.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\menu\menu.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\menu\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\menu\menu.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\menu\menu.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressCircular\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\progressCircular\progressCircular.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\progressLinear\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\progressLinear\progressLinear.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\radioButton\radioButton-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\radioButton\radioButton.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\radioButton\radioButton.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\radioButton\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\radioButton\radioButton.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\radioButton\radioButton.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\sidenav\sidenav.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\sidenav\sidenav.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\sidenav\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\sidenav\sidenav.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\sidenav\sidenav.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\slider\slider-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\slider\slider-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\slider\slider.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\slider\slider.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\slider\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\slider\slider.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\slider\slider.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\sticky\sticky.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\sticky\sticky.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\sticky\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\sticky\sticky.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\sticky\sticky.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\subheader\subheader-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\subheader\subheader-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\subheader\subheader.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\subheader\subheader.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\subheader\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\subheader\subheader.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\subheader\subheader.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\swipe\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\swipe\swipe.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\swipe\swipe.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\switch\switch-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\switch\switch-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\switch\switch.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\switch\switch.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\switch\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\switch\switch.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\switch\switch.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\tabs\tabs-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tabs\tabs-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tabs\tabs.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tabs\tabs.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tabs\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\tabs\tabs.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\tabs\tabs.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\textField\textField-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\textField\textField-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\textField\textField.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\textField\textField.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\textField\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\textField\textField.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\textField\textField.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\toast\toast-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toast\toast-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toast\toast.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toast\toast.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toast\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\toast\toast.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\toast\toast.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toolbar\toolbar-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toolbar\toolbar.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toolbar\toolbar.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\toolbar\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\toolbar\toolbar.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\toolbar\toolbar.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tooltip\tooltip-default-theme.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tooltip\tooltip.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tooltip\tooltip.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\tooltip\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\tooltip\tooltip.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\tooltip\tooltip.min.js" />
+    <Content Include="app\bower_components\angular-material\modules\js\whiteframe\whiteframe.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\whiteframe\whiteframe.min.css" />
+    <Content Include="app\bower_components\angular-material\modules\js\whiteframe\bower.json" />
+    <Compile Include="app\bower_components\angular-material\modules\js\whiteframe\whiteframe.js" />
+    <Compile Include="app\bower_components\angular-material\modules\js\whiteframe\whiteframe.min.js" />
+    <Content Include="app\bower_components\html5-boilerplate\css\main.css" />
+    <Content Include="app\bower_components\html5-boilerplate\css\normalize.css" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\crossdomain.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\css.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\extend.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\faq.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\html.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\js.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\misc.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\TOC.md" />
+    <Content Include="app\bower_components\html5-boilerplate\doc\usage.md" />
+    <Compile Include="app\bower_components\html5-boilerplate\js\main.js" />
+    <Compile Include="app\bower_components\html5-boilerplate\js\plugins.js" />
+    <Compile Include="app\bower_components\html5-boilerplate\js\vendor\jquery-1.10.2.min.js" />
+    <Compile Include="app\bower_components\html5-boilerplate\js\vendor\modernizr-2.6.2.min.js" />
+    <Compile Include="app\components\version\interpolate-filter.js" />
+    <Compile Include="app\components\version\interpolate-filter_test.js" />
+    <Compile Include="app\components\version\version-directive.js" />
+    <Compile Include="app\components\version\version-directive_test.js" />
+    <Compile Include="app\components\version\version.js" />
+    <Compile Include="app\components\version\version_test.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app" />
+    <Folder Include="app\bower_components" />
+    <Folder Include="app\bower_components\angular" />
+    <Folder Include="app\bower_components\angular-animate" />
+    <Folder Include="app\bower_components\angular-aria" />
+    <Folder Include="app\bower_components\angular-loader" />
+    <Folder Include="app\bower_components\angular-material" />
+    <Folder Include="app\bower_components\angular-material\modules" />
+    <Folder Include="app\bower_components\angular-material\modules\closure" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\backdrop" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\bottomSheet" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\button" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\card" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\checkbox" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\content" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\core" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\dialog" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\divider" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\icon" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\list" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\menu" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\progressCircular" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\progressLinear" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\radioButton" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\sidenav" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\slider" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\sticky" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\subheader" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\swipe" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\switch" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\tabs" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\textField" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\toast" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\toolbar" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\tooltip" />
+    <Folder Include="app\bower_components\angular-material\modules\closure\whiteframe" />
+    <Folder Include="app\bower_components\angular-material\modules\js" />
+    <Folder Include="app\bower_components\angular-material\modules\js\backdrop" />
+    <Folder Include="app\bower_components\angular-material\modules\js\bottomSheet" />
+    <Folder Include="app\bower_components\angular-material\modules\js\button" />
+    <Folder Include="app\bower_components\angular-material\modules\js\card" />
+    <Folder Include="app\bower_components\angular-material\modules\js\checkbox" />
+    <Folder Include="app\bower_components\angular-material\modules\js\content" />
+    <Folder Include="app\bower_components\angular-material\modules\js\core" />
+    <Folder Include="app\bower_components\angular-material\modules\js\dialog" />
+    <Folder Include="app\bower_components\angular-material\modules\js\divider" />
+    <Folder Include="app\bower_components\angular-material\modules\js\icon" />
+    <Folder Include="app\bower_components\angular-material\modules\js\list" />
+    <Folder Include="app\bower_components\angular-material\modules\js\menu" />
+    <Folder Include="app\bower_components\angular-material\modules\js\progressCircular" />
+    <Folder Include="app\bower_components\angular-material\modules\js\progressLinear" />
+    <Folder Include="app\bower_components\angular-material\modules\js\radioButton" />
+    <Folder Include="app\bower_components\angular-material\modules\js\sidenav" />
+    <Folder Include="app\bower_components\angular-material\modules\js\slider" />
+    <Folder Include="app\bower_components\angular-material\modules\js\sticky" />
+    <Folder Include="app\bower_components\angular-material\modules\js\subheader" />
+    <Folder Include="app\bower_components\angular-material\modules\js\swipe" />
+    <Folder Include="app\bower_components\angular-material\modules\js\switch" />
+    <Folder Include="app\bower_components\angular-material\modules\js\tabs" />
+    <Folder Include="app\bower_components\angular-material\modules\js\textField" />
+    <Folder Include="app\bower_components\angular-material\modules\js\toast" />
+    <Folder Include="app\bower_components\angular-material\modules\js\toolbar" />
+    <Folder Include="app\bower_components\angular-material\modules\js\tooltip" />
+    <Folder Include="app\bower_components\angular-material\modules\js\whiteframe" />
+    <Folder Include="app\bower_components\angular-material\themes" />
+    <Folder Include="app\bower_components\angular-mocks" />
+    <Folder Include="app\bower_components\angular-route" />
+    <Folder Include="app\bower_components\hammerjs" />
+    <Folder Include="app\bower_components\html5-boilerplate" />
+    <Folder Include="app\bower_components\html5-boilerplate\css" />
+    <Folder Include="app\bower_components\html5-boilerplate\doc" />
+    <Folder Include="app\bower_components\html5-boilerplate\img" />
+    <Folder Include="app\bower_components\html5-boilerplate\js" />
+    <Folder Include="app\bower_components\html5-boilerplate\js\vendor" />
+    <Folder Include="app\components" />
+    <Folder Include="app\components\version" />
+    <Folder Include="app\view1" />
+    <Folder Include="app\view2" />
+    <Folder Include="e2e-tests" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
