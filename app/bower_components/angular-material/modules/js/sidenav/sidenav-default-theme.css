@@ -4,4 +4,5 @@
  * @license MIT
  * v0.7.0-rc3
  */
-!function(){"use strict";angular.module("material.components.whiteframe",[])}();
+md-sidenav.md-THEME_NAME-theme {
+  background-color: '{{background-hue-3}}'; }

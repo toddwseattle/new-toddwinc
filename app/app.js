@@ -10,7 +10,7 @@ angular.module('myApp', [
 ])
 .config(['$routeProvider','$mdThemingProvider', function ($routeProvider,$mdThemingProvider) {
         $routeProvider.otherwise({ redirectTo: '/view1' });
-//        $mdThemingProvider.theme('default').primaryColor('grey');
+        $mdThemingProvider.theme('default').primaryColor('grey');
 
     }])
 ;
