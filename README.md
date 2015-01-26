@@ -1,45 +1,35 @@
-# angular-seed — the seed for AngularJS apps
+# Todd's Personal Homepage Project
 
-This project is an application skeleton for a typical [AngularJS](http://angularjs.org/) web app.
-You can use it to quickly bootstrap your angular webapp projects and dev environment for these
-projects.
+This is a homepage project I created to update [Todd Warren's Personal Site'](http://www.toddwarreninc.com).   
 
-The seed contains a sample AngularJS application and is preconfigured to install the Angular
-framework and a bunch of development and testing tools for instant web development gratification.
+The purpose was to think through creating simple landing page examples with [AngularJs](http://angularjs.org).
 
-The seed app doesn't do much, just shows how to wire two controllers and views together.
+I also wanted to get familar with [Angular Material](http://material.angularjs.org) and see how those compoonents work.
 
+The project is not yet in a state that I think it is terribly useful
 
-## Getting Started
+# Basis
+The project was a clone from [Angular Seed](https://github.com/angular/angular-seed).
 
-To get you started you can simply clone the angular-seed repository and install the dependencies:
+Angular-Material was installed using bower to the master tree as of late January 2015.
 
-### Prerequisites
+All current dependencies are committed to the project
 
-You need git to clone the angular-seed repository. You can get git from
-[http://git-scm.com/](http://git-scm.com/).
+# Building and Running
+Like other angular-seed baesd projects, it currently uses a simple nodejs http-server.  It has the same pre-reqs as angular-seed repeated below.
 
-We also use a number of node.js tools to initialize and test angular-seed. You must have node.js and
-its package manager (npm) installed.  You can get them from [http://nodejs.org/](http://nodejs.org/).
+Basically you can update the npm and bower library dependencies with 
+    npm install
 
-### Clone angular-seed
+You can start the web server with 
+    npm start
 
-Clone the angular-seed repository using [git][git]:
+the project is by default on http://localhost:8000/app
 
-```
-git clone https://github.com/angular/angular-seed.git
-cd angular-seed
-```
+You can run the jasmine and protractor test with 
+    npm test
 
-If you just want to start a new project without the angular-seed commit history then you can do:
-
-```bash
-git clone --depth=1 https://github.com/angular/angular-seed.git <your-project-name>
-```
-
-The `depth=1` tells git to only pull down one commit worth of historical data.
-
-### Install Dependencies
+### Install Dependencies (from angular seed readme but still work for this)
 
 We have two kinds of dependencies in this project: tools and angular framework code.  The tools help
 us manage and test the application.
