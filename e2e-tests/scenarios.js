@@ -6,15 +6,15 @@ describe('my app', function() {
 
   browser.get('index.html');
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+  it('should automatically redirect to /home when location hash/fragment is empty', function() {
+    expect(browser.getLocationAbsUrl()).toMatch("/home");
   });
 
 
   describe('view1', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/home');
     });
 
 
