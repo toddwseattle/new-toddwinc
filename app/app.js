@@ -4,12 +4,12 @@
 angular.module('myApp', [
     'ngMaterial',
     'ngRoute',
-    'myApp.view1',
+    'myApp.home',
     'myApp.view2',
     'myApp.version'
 ])
 .config(['$routeProvider','$mdThemingProvider', function ($routeProvider,$mdThemingProvider) {
-        $routeProvider.otherwise({ redirectTo: '/view1' });
+        $routeProvider.otherwise({ redirectTo: '/home' });
         $mdThemingProvider.theme('default').primaryColor('grey');
 
     }])

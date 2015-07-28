@@ -28,9 +28,9 @@
     <Compile Include="app\app.js" />
     <Compile Include="e2e-tests\protractor.conf.js" />
     <Compile Include="e2e-tests\scenarios.js" />
-    <Content Include="app\view1\view1.html" />
-    <Compile Include="app\view1\view1.js" />
-    <Compile Include="app\view1\view1_test.js" />
+    <Content Include="app\viewhome\home.html" />
+    <Compile Include="app\viewhome\home.js" />
+    <Compile Include="app\viewhome\home_test.js" />
     <Content Include="app\view2\view2.html" />
     <Compile Include="app\view2\view2.js" />
     <Compile Include="app\view2\view2_test.js" />
@@ -460,7 +460,7 @@
     <Folder Include="app\bower_components\html5-boilerplate\js\vendor" />
     <Folder Include="app\components" />
     <Folder Include="app\components\version" />
-    <Folder Include="app\view1" />
+    <Folder Include="app\viewhome\" />
     <Folder Include="app\view2" />
     <Folder Include="e2e-tests" />
   </ItemGroup>
